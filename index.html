@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+    <meta name="description" content="A sleek and modern To-Do List WebApp with dark and light mode.">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <title>Task Manager | Just Do It</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Just Do It</h1>
+            <div class="theme-switcher">
+                <button class="theme-btn standard-theme" title="Standard Theme"></button>
+                <button class="theme-btn light-theme" title="Light Theme"></button>
+                <button class="theme-btn darker-theme" title="Darker Theme"></button>
+            </div>
+        </header>
+
+        <section class="todo-section">
+            <form id="todo-form">
+                <input type="text" class="todo-input" placeholder="Enter a new task..." required>
+                <button type="submit" class="todo-btn">Add Task</button>
+            </form>
+
+            <ul class="todo-list"></ul>
+        </section>
+    </div>
+
+    <script src="JS/main.js" defer></script>
+</body>
+</html>
